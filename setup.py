@@ -11,5 +11,5 @@ setup(
     package_dir={'MoodleQuizParser': 'MoodleQuizParser', 'MoodleQuizParser.Models': 'MoodleQuizParser/Models'},
     packages=['MoodleQuizParser', 'MoodleQuizParser.Models'],
     install_requires=['beautifulsoup4'],
-    license="MIT"
+    license="MIT",
 )
