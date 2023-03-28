@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from MoodleQuizParser import __version__
+from src import __version__
 
 setup(
     version=__version__,
@@ -8,7 +8,6 @@ setup(
     description='PIP package for parsing moodle quiz HTML documents',
     url='https://github.com/Kononenko-Daniil/py-moodle-quiz-parser',
     author='Daniil Kononenko',
-    packages=['MoodleQuizParser'],
     install_requires=[
         'beautifulsoup4'
     ]
