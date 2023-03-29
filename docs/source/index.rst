@@ -1,22 +1,18 @@
-Welcome to Lumache's documentation!
-===================================
+Python Moodle Quiz Parser documentation!
+========================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**py-moodle-quiz-parser** is simple Python library for fast parsing HTML documents with Moodle quizes.
+..  code-block::
+    from MoodleQuizParser.QuizParser import QuizParser
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+    parser = QuizParser()
+    file = open("moodle_quiz.html", encoding="utf-8")
 
-.. note::
+    parsed_data = parser.parse_html(file.read(), as_dict=True)
 
-   This project is under active development.
+How to use this library
+=======================
 
-Contents
---------
-
-.. toctree::
-
-   usage
-   api
+To use **py-moodle-quiz-parser** you should simply install it using PIP
+..  code-block::
+    pip install py-moodle-quiz-parser
