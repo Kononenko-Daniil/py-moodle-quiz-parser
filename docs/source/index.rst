@@ -1,8 +1,12 @@
-Python Moodle Quiz Parser documentation!
-========================================
+Python Moodle Quiz Parser
+=========================
 
 **py-moodle-quiz-parser** is simple Python library for fast parsing HTML documents with Moodle quizes.
-..  code-block::
+
+Here is simple usage example:
+
+..  code-block:: python
+
     from MoodleQuizParser.QuizParser import QuizParser
 
     parser = QuizParser()
@@ -10,9 +14,11 @@ Python Moodle Quiz Parser documentation!
 
     parsed_data = parser.parse_html(file.read(), as_dict=True)
 
-How to use this library
-=======================
+Installation
+------------
 
 To use **py-moodle-quiz-parser** you should simply install it using PIP
-..  code-block::
+
+..  code-block:: console
+    
     pip install py-moodle-quiz-parser
