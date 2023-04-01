@@ -15,8 +15,4 @@ To use **py-moodle-quiz-parser** you should simply install it using PIP
 ```python
 pip install py-moodle-quiz-parser
 ```
-.. toctree::
-   :maxdepth: 1
-
-   quizparser
    
