@@ -31,4 +31,4 @@ Learn more
    :maxdepth: 2
 
     quiz-parser
-    answer-types/index
+    answers/index
