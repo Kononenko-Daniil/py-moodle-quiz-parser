@@ -29,4 +29,4 @@ Learn more
 .. toctree::
 
     quiz-parser
-    answers/index
+    models/index

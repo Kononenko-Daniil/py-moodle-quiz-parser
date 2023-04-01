@@ -2,35 +2,25 @@ from bs4 import BeautifulSoup
 
 from Models.ChoiceAnswer import ChoiceAnswer
 from Models.MatchingAnswer import MatchingAnswer
-from Models.Question import Question
 from Models.TextAnswer import TextAnswer
 
-
-class Type:
-    CHOICE = "CHOICE"
-    TEXT = "TEXT"
-    MATCHING = "MATCHING"
-
-
-class Answer:
-    def __init__(self, type, content):
-        self.type = type
-        self.content = content
+from Models.Question import Question
+from Models.Answer import *
 
 
 class QuizParser:
     def __init__(self):
         self.tags = {
-            "div": Type.CHOICE,
-            "span": Type.TEXT,
-            "table": Type.MATCHING
+            "div": AnswerType.CHOICE,
+            "span": AnswerType.TEXT,
+            "table": AnswerType.MATCHING
         }
 
     def get_answer(self, answer_html):
         answer_type = self.tags[answer_html.name]
-        if answer_type == Type.CHOICE:
+        if answer_type == AnswerType.CHOICE:
             answer_content = ChoiceAnswer(answer_html)
-        elif answer_type == Type.TEXT:
+        elif answer_type == AnswerType.TEXT:
             answer_content = TextAnswer(answer_html)
         else:
             answer_content = MatchingAnswer(answer_html)

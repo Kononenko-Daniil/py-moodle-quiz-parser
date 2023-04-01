@@ -1,0 +1,51 @@
+Models
+======
+
+``Models`` is an internal MoodleQuizParser package, in which there are models of different question types (check, matching, etc).
+
+Usage
+-----
+In order to use answer types you should simply import MoodleQuizParser.Models.
+
+.. code-block:: python
+
+    from MoodleQuizParser.Models import *
+
+Global Models
+-------------
+Here are description of two simple modules, main purpose of which is storing data
+
+Question.py
+~~~~~~~~~~~~~~~~
+
+``class Question(text, max_grade, grade, answer)``
+    Class for storing question info.
+
+    ``text: str``
+        Question text.
+    ``max_grade: float``
+        Maximum grade for this question.
+    ``grade: float``
+        Current grade for this question.
+    ``answer: Answer``
+        Answer for this question. For more info see next section.
+
+Answer.py
+~~~~~~~~~~~~~~
+
+``class Answer(type, content)``
+    Class for storing answer data.
+
+    ``type: AnswerType``
+        Answer type. For more info see *class AnswerType*.
+    ``content``
+        Answer content. Depends on question type. For more info see *Answer types* section.
+
+Answer types
+------------
+
+.. toctree::
+
+    choice-answer
+    matching-answer
+    text-answer
