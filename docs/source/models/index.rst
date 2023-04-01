@@ -21,14 +21,10 @@ Question.py
 ``class Question(text, max_grade, grade, answer)``
     Class for storing question info.
 
-    ``text: str``
-        Question text.
-    ``max_grade: float``
-        Maximum grade for this question.
-    ``grade: float``
-        Current grade for this question.
-    ``answer: Answer``
-        Answer for this question. For more info see next section.
+    **text: str** - question text.
+    **max_grade: float** - maximum grade for this question.
+    **grade: float** - current grade for this question.
+    **answer: Answer** - Answer for this question. For more info see next section.
 
 Answer.py
 ~~~~~~~~~~~~~~
@@ -36,10 +32,12 @@ Answer.py
 ``class Answer(type, content)``
     Class for storing answer data.
 
-    ``type: AnswerType``
-        Answer type. For more info see *class AnswerType*.
-    ``content``
-        Answer content. Depends on question type. For more info see *Answer types* section.
+    **type: AnswerType** - answer type. For more info see *class AnswerType*.
+    **content** - answer content. Depends on question type. For more info see *Answer types* section.
+
+``class AnswerType``
+    This is an *enum* class.
+    Available types: ``CHECK``, ``TEXT``, ``MATCHING``
 
 Answer types
 ------------
