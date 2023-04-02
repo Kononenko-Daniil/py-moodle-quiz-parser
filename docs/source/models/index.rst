@@ -1,7 +1,7 @@
 Models
 ======
 
-``Models`` is an internal MoodleQuizParser package, in which there are models of different question types (check, matching, etc).
+**Models** is an internal MoodleQuizParser package, in which there are models of different question types (check, matching, etc).
 
 Usage
 -----
