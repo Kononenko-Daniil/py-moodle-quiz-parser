@@ -26,6 +26,17 @@ Question.py
     **grade: float** - current grade for this question.
     **answer: Answer** - Answer for this question. For more info see next section.
 
+    ``to_dict()`` - returns dictionary version of question, for example:
+
+    .. code-block::
+
+        {
+            "question": "<Question text>",
+            "max_grade": <Max grade>,
+            "grade": <Grade>,
+            "answer": (Dictionary version of answer)
+        }
+
 Answer.py
 ~~~~~~~~~~~~~~
 
@@ -35,12 +46,31 @@ Answer.py
     **type: AnswerType** - answer type. For more info see *class AnswerType*.
     **content** - answer content. Depends on question type. For more info see *Answer types* section.
 
+    ``to_dict()`` - returns dictionary version of answer, for example:
+
+    .. code-block::
+
+        {
+            "type": "<AnswerType>",
+            "content": (Dictionary version of answer content)
+        }
+
 ``class AnswerType``
     This is an *enum* class.
     Available types: ``CHECK``, ``TEXT``, ``MATCHING``
 
 Answer types
 ------------
+
+Every answer type class has two main methods:
+
+``parse_answer(html)``
+    Used for parsing HTML block, which contains data of corresponding answer type.
+
+``to_dict()``
+    Returns dictionary version of parsed HTML data.
+
+Detailed info about dictionary version of each answer type you can find in corresponding sections:
 
 .. toctree::
 
