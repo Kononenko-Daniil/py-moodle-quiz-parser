@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 setup(
     version=__version__,
     name='py-moodle-quiz-parser',
-    description='PIP package for parsing moodle quiz HTML documents',
+    description='Package for parsing moodle quiz HTML documents',
     long_description=readme,
     long_description_content_type='text/markdown',
     url='https://github.com/Kononenko-Daniil/py-moodle-quiz-parser',
