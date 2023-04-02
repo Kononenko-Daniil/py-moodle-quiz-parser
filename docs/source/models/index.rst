@@ -21,10 +21,10 @@ Question.py
 ``class Question(text, max_grade, grade, answer)``
     Class for storing question info.
 
-    **text: str** - question text.
-    **max_grade: float** - maximum grade for this question.
-    **grade: float** - current grade for this question.
-    **answer: Answer** - Answer for this question. For more info see next section.
+    | **text: str** - question text.
+    | **max_grade: float** - maximum grade for this question.
+    | **grade: float** - current grade for this question.
+    | **answer: Answer** - Answer for this question. For more info see next section.
 
     ``to_dict()`` - returns dictionary version of question, for example:
 
@@ -43,8 +43,8 @@ Answer.py
 ``class Answer(type, content)``
     Class for storing answer data.
 
-    **type: AnswerType** - answer type. For more info see *class AnswerType*.
-    **content** - answer content. Depends on question type. For more info see *Answer types* section.
+    | **type: AnswerType** - answer type. For more info see *class AnswerType*.
+    | **content** - answer content. Depends on question type. For more info see *Answer types* section.
 
     ``to_dict()`` - returns dictionary version of answer, for example:
 
