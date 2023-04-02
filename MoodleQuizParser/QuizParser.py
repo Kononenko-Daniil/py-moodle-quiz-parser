@@ -48,14 +48,7 @@ class QuizParser:
     def to_dict(self, questions):
         dict_obj = []
         for question in questions:
-            question_obj = {
-                "question": question.text,
-                "max_grade": question.max_grade,
-                "grade": question.grade,
-                "answer": question.answer.content.to_dict()
-            }
-
-            dict_obj.append(question_obj)
+            dict_obj.append(question.to_dict())
 
         return dict_obj
 
