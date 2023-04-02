@@ -1,11 +1,12 @@
 from bs4 import BeautifulSoup
 
-from Models.ChoiceAnswer import ChoiceAnswer
-from Models.MatchingAnswer import MatchingAnswer
-from Models.TextAnswer import TextAnswer
+from .Models.ChoiceAnswer import ChoiceAnswer
+from .Models.MatchingAnswer import MatchingAnswer
+from .Models.TextAnswer import TextAnswer
 
-from Models.Question import Question
-from Models.Answer import *
+from .Models.Question import Question
+from .Models.Answer import Answer
+from .Models.Answer import AnswerType
 
 
 class QuizParser:
