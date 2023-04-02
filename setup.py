@@ -17,4 +17,8 @@ setup(
     packages=['MoodleQuizParser', 'MoodleQuizParser.Models'],
     install_requires=['beautifulsoup4'],
     license="MIT",
+    project_urls={
+        "Documentation": "https://py-moodle-quiz-parser.readthedocs.io/en/latest/",
+        "Source": "https://github.com/Kononenko-Daniil/py-moodle-quiz-parser"
+    }
 )
