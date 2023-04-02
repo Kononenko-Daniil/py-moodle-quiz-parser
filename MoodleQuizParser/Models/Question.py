@@ -1,5 +1,3 @@
-from Answer import Answer
-
 DEFAULT_QUESTION_TEXT = "--question--"
 DEFAULT_MAX_GRADE = 1.0
 DEFAULT_GRADE = 0.0
